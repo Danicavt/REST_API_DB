@@ -73,3 +73,17 @@ export const deleteEmployee = (req, res) => {
             res.status(500).send(err);
         });
 };
+
+/*export const uploadEmployee = (req, res) => {
+    const employee = req.body;
+    employeeServices
+        .uploadEmployee(employee)
+        .then((result) => {
+            res.status(200).json({
+                message: "Employees uploaded"
+            })
+        })
+        .catch((err) => {
+            res.status(500).send(err);
+        });
+};*/
